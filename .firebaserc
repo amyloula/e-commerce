@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "staging": "noodies-re-write",
+    "default": "noodies-re-write",
+    "refactored": "friendlychat-6f312",
+    "latest": "friendlychat-6f312"
+  }
+}

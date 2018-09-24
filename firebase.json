@@ -1,0 +1,106 @@
+{  
+	"functions": {
+		"source": "functions"
+  },
+   "hosting":{  
+      "public":"public",
+      "ignore":[  
+         "firebase.json",
+         "**/.*",
+         "**/node_modules/**"
+      ],
+      "rewrites": [
+	      {
+	        "source": "/process",
+	        "function": "process"
+	      },
+	      {
+	        "source": "/pay",
+	        "function": "pay"
+	      },
+         {
+           "source": "/cart",
+           "function": "pay"
+         }
+    ],
+      "headers":[  
+         {  
+            "source":"**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+            "headers":[  
+               {  
+                  "key":"Access-Control-Allow-Origin",
+                  "value":"max-age=2628000"
+               }
+            ]
+         },
+         {  
+            "source":"https://use.fontawesome.com/09c6d4360f.js",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=2628000"
+               }
+            ]
+         },
+         {  
+            "source":"https://fonts.googleapis.com/css?family=Oswald:200;lang=en",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=2628000"
+               }
+            ]
+         },
+         {  
+            "source":"**/*.@(js|css|ttf)",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=2628000"
+               }
+            ]
+         },
+         {  
+            "source":"/",
+            "headers":[  
+               {  
+                  "key":"Link",
+                  "value":"</images/1.png>;rel=preload;as=image, </images/2.png>;rel=preload;as=image, </images/3.png>;rel=preload;as=image, </images/4.png>;rel=preload;as=image, </Willona.otf>;rel=preload;as=font,"
+               }
+            ]
+         },
+         {  
+            "source":"**/*.@(jpg|jpeg|gif|png)",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=2628000"
+               }
+            ]
+         },
+         {  
+            "source":"https://www.google-analytics.com/analytics.js",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=7200"
+               }
+            ]
+         },
+         {  
+            "source":"404.html",
+            "headers":[  
+               {  
+                  "key":"Cache-Control",
+                  "value":"max-age=300"
+               }
+            ]
+         }
+      ],
+      "cleanUrls":true,
+      "trailingSlash":false
+   },
+   "database":{  
+      "rules":"database.rules.json"
+   }
+}

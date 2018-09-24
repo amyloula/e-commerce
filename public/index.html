@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Noodies© nude underwear and swimwear">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="fWFRpgOqx8UseWB37GmrdgFlq0GCkqvB1LMq8wceDzQ" />
+  <title>Noodies©</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">    
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Noodies">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Noodies© - nude coloured underwear and swimwear for all shades">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+  <!-- App Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200;lang=en">
+  <link rel="stylesheet" href="/styles/main.min.css">
+</head>
+<body>
+    <div id=sticky>
+    <header>
+        <div class="heading-title">
+            <a href="/"><h1 class="heading-h1">noodies</h1></a>
+        </div>
+        <div class="cart">
+            <div hidden id="user-name" style="font-size:18px;"></div>
+            <button hidden id="sign-in" aria-hidden="true">
+                Sign in with google
+            </button>
+            <div id="item-count" class="item-count"></div>
+            <div id="shopping-bag" class="shopping-bag"></div>
+            <div hidden id="cart-preview" class="cart-preview">
+                <div id="close-cart" class="close-cart"></div>
+            <div id="preview-products" class="preview-products">
+                <ul id="product-ul"></ul>
+            </div>
+            <div id="preview-checkout" class="preview-checkout">
+                <button class="checkout-btn" id="checkout-btn">VIEW CART</button>
+                </div>
+            </div>
+            <div class="total" id="total"></div>
+            <div id="fave-heart" class="fave-heart"></div>
+            <button hidden id="sign-out">
+                Sign-out
+            </button>
+        </div>
+    </header>
+    </div>
+    <div class="header-banner">
+        <ul id="header-banner-ul">
+        </ul>
+    </div>
+    <div class="offers-banner">
+        <div class="offer-1">
+            <h3>Buy 1, get 2</h3>
+        </div>
+        <div class="offer-2">
+            <h3>Free delivery</h3>
+        </div>
+        <div class="offer-3">
+            <h3>Summer sales</h3>
+        </div>
+    </div>
+    <div class="page-container">
+            <div class=carouselbox>
+            <ol class=content id=content>
+                <li>
+                    <img class="carouselImg" src="images/Maryna-Linchuk-1.jpg" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+                <li>
+                    <img class="carouselImg" src="images/abdf7229c1cb212aa376c81b653183ef.png" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+                <li>
+                    <img class="carouselImg" src="images/Monday-Swimwear-Campaign-2015.png" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+            </ol>
+            </div>
+        <div class="container" id="home-page">
+            <h1 class="shop-by-shade">Shop by shade</h1>
+            <div class="swatches" style="background-color:#5a4a3d;" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#825842" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#ab7654" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#9d6a37" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#e2b68f" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#e6cab2" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#f6d3c0" onclick="void(0)"></div>
+            
+            <h1 class="inspired">Get inspired</h1>
+            <h4>Shop our Instagram</h4>
+            <div class="three-columns">
+            <div class="column">
+                <img src="images/1.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Bikinis</button></a>-->
+            </div>
+            <div class="column">
+                <img src="images/2.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Swimsuits</button></a>-->
+            </div>
+            <div class="column">
+                <img src="images/3.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Bras</button></a>-->
+            </div>
+            <div class="column">
+                <img src="images/4.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Undies</button></a>-->
+            </div>
+        </div>
+            <h4>Get featured</h4>
+            <h1 class="hashtag">#mynewnoodies</h1>
+        </div>
+        <div id="products-display" class="container">
+            <div class="products-display">
+            </div>
+        </div>
+        <div id="order-confirmation" class="container">
+            <div class="order-confirmation" id="order-preview">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <ul>
+                <a href="/about.html"><li>About</li></a>
+                <a href="/faqs.html"><li>FAQs</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <a target="_blank" href="https://www.instagram.com/noodies_eu/"><li class="instagram"></li></a>
+            </ul>
+        </div>
+    </footer>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyAVn4A_vqT-lkqlgozBroEkpjz1JEXV10I",
+    authDomain: "friendlychat-6f312.firebaseapp.com",
+    databaseURL: "https://friendlychat-6f312.firebaseio.com",
+    projectId: "friendlychat-6f312",
+    storageBucket: "friendlychat-6f312.appspot.com",
+    messagingSenderId: "512947533952"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script src="/scripts/main.js"></script>
+</body>
+</html>

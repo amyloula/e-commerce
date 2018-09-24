@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Noodies© nude underwear and swimwear">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noodies©</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Noodies">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Noodies© - nude coloured underwear and swimwear for all shades">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+  <!-- App Styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200;lang=en">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id=sticky>
+    <header>
+        <div class="heading-title">
+            <a href="/"><h1 class="heading-h1">noodies</h1></a>
+        </div>
+        <div class="cart">
+            <div hidden id="user-name" style="font-size:18px;"></div>
+            <button hidden id="sign-in" aria-hidden="true">
+                Sign in with google
+            </button>
+            <div id="item-count" class="item-count"></div>
+            <i class="fa fa-shopping-bag" id="shopping-bag" aria-hidden="true"></i>
+            <div hidden id="cart-preview" class="cart-preview">
+                <i class="fa fa-times" aria-hidden="true" id="close-cart"></i>
+            <div id="preview-products" class="preview-products">
+                <ul id="product-ul"></ul>
+            </div>
+            <div id="preview-checkout" class="preview-checkout">
+                <button class="preview-checkout-buttons">View bag</button>
+                <button class="preview-checkout-buttons">Checkout</button>
+                <h5 id="cart-preview-total"></h5>
+                </div>    
+            </div>
+            <div class="total" id="total"></div>
+            <i class="fa fa-heart-o" id="fave-heart" aria-hidden="true"></i>
+            <button hidden id="sign-out">
+                Sign-out
+            </button>
+        </div>
+    </header>
+    </div>
+    <div class="header-banner" id="header-banner">
+        <ul id="header-banner-ul">
+        </ul>
+    </div>
+    <div class="offers-banner">
+        <div class="offer-1">
+            <h3>Buy 1, get 2</h3>
+        </div>
+        <div class="offer-2">
+            <h3>Free delivery</h3>
+        </div>
+        <div class="offer-3">
+            <h3>Summer sales</h3>
+        </div>
+    </div>
+    <div class="page-container">
+            <div class=carouselbox>
+            <ol class=content id=content>
+                <li>
+                    <img class="carouselImg" src="http://dailynewsburner.com/wp-content/uploads/2014/04/Maryna-Linchuk-1.jpg" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+                <li>
+                    <img class="carouselImg" src="https://s-media-cache-ak0.pinimg.com/originals/ab/df/72/abdf7229c1cb212aa376c81b653183ef.png" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+                <li>
+                    <img class="carouselImg" src="https://www.gremlymedia.com/wp-content/uploads/2016/12/Monday-Swimwear-Campaign-2015.png" alt=""/>
+                        <a class="topNewsP">Shop now</a>
+                </li>
+            </ol>
+            </div>
+        <div class="container" id="home-page">
+            <h1 class="shop-by-shade">Shop by shade</h1>
+            <div class="swatches" style="background-color:#5a4a3d;" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#825842" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#ab7654" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#9d6a37" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#e2b68f" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#e6cab2" onclick="void(0)"></div>
+            <div class="swatches" style="background-color:#f6d3c0" onclick="void(0)"></div>
+            
+            <h1 class="inspired">Get inspired</h1>
+            <h4>Shop our Instagram</h4>
+            <div class="three-columns">
+            <div class="column">
+                <img src="1.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Bikinis</button></a>-->
+            </div>
+            <div class="column">
+                <img src="2.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Swimsuits</button></a>-->
+            </div>
+            <div class="column">
+                <img src="3.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Bras</button></a>-->
+            </div>
+            <div class="column">
+                <img src="4.png" alt="" class="">
+<!--                <a href="/products.html"><button type="button" class="column-but">Undies</button></a>-->
+            </div>
+        </div>
+            <h4>Get featured</h4>
+            <h1 class="hashtag">#mynewnoodies</h1>
+        </div>
+        <div id="products-display" class="container">
+            <div class="products-display">
+            </div>
+        </div>
+        <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+      </div>
+    </div>
+    <footer>
+        <div class="links">
+            <ul>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Press</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <a target="_blank" href="https://www.instagram.com/noodies_eu/"><li class="instagram"></li></a>
+            </ul>
+        </div>
+    </footer>
+
+<!-- Import and configure the Firebase SDK -->
+    
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHI20KOl6HL62-dinH6z63iFoRD6R9N2o",
+    authDomain: "noodies-re-write.firebaseapp.com",
+    databaseURL: "https://noodies-re-write.firebaseio.com",
+    projectId: "noodies-re-write",
+    storageBucket: "noodies-re-write.appspot.com",
+    messagingSenderId: "664571690071"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="/__/firebase/4.1.3/firebase.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script defer src="https://use.fontawesome.com/09c6d4360f.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
